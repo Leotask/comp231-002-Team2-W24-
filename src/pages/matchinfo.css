@@ -1,0 +1,32 @@
+/* Basic table styling */
+.match-info-table {
+    width: 100%; /* Make the table width span the full container width */
+    border-collapse: collapse; /* Collapse borders between table cells */
+    margin-top: 20px; /* Add some space above the table */
+    font-family: Arial, sans-serif; /* Use a simple, readable font */
+  }
+  
+  .match-info-table th, .match-info-table td {
+    border: 1px solid #ddd; /* Light grey border for cells */
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Add padding inside table cells for spacing */
+  }
+  
+  .match-info-table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white; /* White text for headers */
+  }
+  
+  /* Style rows with alternating colors for easier reading */
+  .match-info-table tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+  }
+  .match-info-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+  }
+  
+  /* Hover effect for rows */
+  .match-info-table tr:hover {
+    background-color: #ddd; /* Darker grey on hover */
+  }
+  

@@ -1,0 +1,83 @@
+/* .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f4f4f4;
+  } */
+  
+  /* form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  } */
+  
+  .input-group {
+    width: 60%;
+    padding: 10px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+  
+  .login-btn {
+    background-color: #007bff; /* Slightly lighter blue */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056cc; /* Darker shade for hover effect */
+  }
+  
+  .register-btn {
+    background-color: #28a745; /* Crisp green */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .register-btn:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+  }
+  
+  .forgot-password-btn {
+    background-color: #dc3545; /* Soft red */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .forgot-password-btn:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+  }
+  
+  

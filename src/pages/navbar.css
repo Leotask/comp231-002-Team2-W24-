@@ -1,0 +1,101 @@
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+  /* background: #000 url(https://unsplash.it/1600/1000/?random); */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 0 2rem; /* 1rem * 2 */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+}
+.logo{
+  height: 50px;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navbar__menu {
+  position: relative;
+  display: flex;
+}
+
+.navbar__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem; /* 1rem * 3.5 */
+  width: 10rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 250ms ease all;
+}
+
+.navbar__link svg {
+  transition: 500ms ease all;
+}
+
+.navbar__link:hover svg {
+  stroke: #C4151C;
+}
+
+.navbar:not(:hover) .navbar__link:focus, .navbar__link:hover span {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.navbar__item:last-child:before {
+  content: '';
+  position: absolute;
+  left: -8rem;
+  margin-left: 5rem; /* 10rem / 2 */
+  bottom: -1.25rem;
+  height: 0.5rem;
+  width: 2px;
+  background: #C4151C;
+  box-shadow: 0 -0.5rem #C4151C, 0 -0.5rem #C4151C, 0 0 3rem 0.5rem #C4151C, 2rem 0 0 rgba(255, 255, 255, 0.2), -3rem 0 0 rgba(255, 255, 255, 0.2);
+  transition: 500ms ease all;
+}
+
+/* Sign-in Button */
+.sign-in-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

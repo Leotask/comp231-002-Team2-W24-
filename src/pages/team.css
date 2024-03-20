@@ -1,0 +1,47 @@
+/* team.css */
+
+
+.team-section {
+  text-align: center; 
+  padding: 50px; 
+
+}
+
+
+.team-logo {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  
+}
+
+
+
+.team h3 {
+    margin: 0; 
+    color: #333; 
+    font-size: 20px; 
+    white-space: nowrap; 
+    text-align: center; /* Centers the text horizontally */
+    overflow: hidden; /* Hides any overflowed content */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
+    margin-bottom: 30px; /* Adds space below the logo image before the team name */
+}
+
+h1{
+  padding-bottom: 50px;
+}
+
+.team-logo-cover {
+  border-radius: 10px; /* Rounds the corners of the team logo container */
+  text-align: center; /* Centers the content (logo and name) inside the team logo container */
+  margin-bottom: 15px; /* Adds space below the logo image before the team name */
+
+
+}
+.teamimg{
+  width: 300px; /* Adjust logo size as needed */
+  height: 300px; /* Maintain aspect ratio for the logo */
+  border-radius: 50%; /* Circular logo */
+}
+
