@@ -1,8 +1,36 @@
-import React from 'react';
+import React, { useState } from "react";
 import './about.css'
 import about from './about.jpeg'
-import logo from './logo.png';
+import handleContact from "../handles/contactsubmit"
+
 export default function About() {
+const initialFormData = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  mobile: "",
+  message: "",
+};
+const [formData, setFormData] = useState(initialFormData);
+
+const handleChange = (event) => {
+  const { name, value } = event.target;
+  setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+};
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const { firstName,lastName, email, mobile, message } = formData;
+
+  setFormData(initialFormData);
+  console.log(formData)
+  handleContact(formData);
+};
+
+const handleCancel = () => {
+  setFormData(initialFormData);
+};
+
   return (
     <div className="responsive-container-block bigContainer">
       <div className="responsive-container-block Container">
@@ -19,10 +47,7 @@ export default function About() {
           </p>
  
       <div className="containercontact">
-        <div className="text">
-          Contact us Form
-        </div>
-        <form className="contact" >
+      <form className="contact" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="input-data">
               <input
@@ -30,6 +55,8 @@ export default function About() {
                 id="firstName"
                 required
                 name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
               />
               <div className="underline"></div>
               <label htmlFor="firstName">First Name</label>
@@ -40,6 +67,8 @@ export default function About() {
                 id="lastName"
                 required
                 name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
               />
               <div className="underline"></div>
               <label htmlFor="lastName">Last Name</label>
@@ -52,6 +81,8 @@ export default function About() {
                 id="email"
                 required
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
               />
               <div className="underline"></div>
               <label htmlFor="email">Email Address</label>
@@ -62,6 +93,8 @@ export default function About() {
                 id="mobile"
                 required
                 name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
               />
             
           
@@ -77,6 +110,8 @@ export default function About() {
                 id="message"
                 required
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
               ></textarea>
               
                
@@ -84,15 +119,22 @@ export default function About() {
               <div className="underline"></div>
               <label htmlFor="message">Write your message</label>
             </div>
-            <button className="contactsubmitbutton">Submit</button>
           </div>
+          
+            <button className="contactsubmitbutton"type="submit" value="submit">Submit</button>
+            <br></br>
+            <button className="submit-btn" type="button" onClick={handleCancel}>
+              Cancel
+            </button>
+          
           </form>
     
+          </div>
     </div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+
+
 )
 
 }
-
