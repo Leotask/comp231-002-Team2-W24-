@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './about.css'
 import about from './about.jpeg'
 import handleContact from "../handles/contactsubmit"
+import fetchContacts from "../handles/fetchData"
 
 export default function About() {
 const initialFormData = {
@@ -25,6 +26,7 @@ const handleSubmit = (event) => {
   setFormData(initialFormData);
   console.log(formData)
   handleContact(formData);
+  fetchContacts();
 };
 
 const handleCancel = () => {
