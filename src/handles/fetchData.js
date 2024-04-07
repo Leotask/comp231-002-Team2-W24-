@@ -1,3 +1,5 @@
+// fetching contact data for testing
+/*
 import { firestore } from '../firebase_setup/firebase'; // Adjust the path as necessary
 import { collection, getDocs } from 'firebase/firestore';
 
@@ -11,3 +13,4 @@ const fetchContacts = async () => {
 fetchContacts().catch(console.error);
 
 export default fetchContacts
+*/

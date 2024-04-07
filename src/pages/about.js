@@ -26,7 +26,6 @@ const handleSubmit = (event) => {
   setFormData(initialFormData);
   console.log(formData)
   handleContact(formData);
-  fetchContacts();
 };
 
 const handleCancel = () => {

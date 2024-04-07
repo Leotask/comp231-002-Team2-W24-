@@ -9,7 +9,7 @@ const handleContact = (formData) => {
     try {
         addDoc(ref, data)
     } catch(err) {
-        console.log(err)
+        console.log("Error adding document: ",err)
     }
 }
  
