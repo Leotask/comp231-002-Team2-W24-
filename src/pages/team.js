@@ -11,7 +11,6 @@ import ThunderboltsFC from './teamlogo/ThunderboltsFC.jpg'
 import UrbanKnightsFC from './teamlogo/UrbanKnightsFC.jpg'
 
 
-// Define a TeamMember component to display individual team member details
 const TeamLogo = ({ name, photo }) => (
   <div className="team-logo-cover">
     <Link to={`/teaminfo/${name.replace(/\s+/g, '-').toLowerCase()}`}>

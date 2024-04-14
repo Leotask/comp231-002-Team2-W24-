@@ -8,7 +8,7 @@ const handleRegistration = async (formData) => {
         await addDoc(ref, formData);
     } catch (err) {
         console.error("Error during registration:", err);
-        throw err; // Rethrow to catch in component
+        throw err; 
     }
 };
 

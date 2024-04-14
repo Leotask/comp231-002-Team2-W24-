@@ -22,7 +22,7 @@ export default function Register() {
         try {
             await handleRegistration(formData);
             alert("Registration successful!");
-            setFormData(initialFormData); // Reset form data
+            setFormData(initialFormData); 
         } catch (error) {
             alert("Registration failed. Please try again.");
             console.error(error);

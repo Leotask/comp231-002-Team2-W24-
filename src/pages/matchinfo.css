@@ -1,32 +1,31 @@
-/* Basic table styling */
+
 .match-info-table {
-    width: 100%; /* Make the table width span the full container width */
-    border-collapse: collapse; /* Collapse borders between table cells */
-    margin-top: 20px; /* Add some space above the table */
-    font-family: Arial, sans-serif; /* Use a simple, readable font */
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    font-family: Arial, sans-serif; 
   }
   
   .match-info-table th, .match-info-table td {
-    border: 1px solid #ddd; /* Light grey border for cells */
-    text-align: left; /* Align text to the left */
-    padding: 8px; /* Add padding inside table cells for spacing */
+    border: 1px solid #ddd; 
+    text-align: left; 
+    padding: 8px; 
   }
   
   .match-info-table th {
-    background-color: #4CAF50; /* Green background for headers */
-    color: white; /* White text for headers */
+    background-color: #4CAF50; 
+    color: white; 
   }
   
-  /* Style rows with alternating colors for easier reading */
+
   .match-info-table tr:nth-child(odd) {
-    background-color: #f2f2f2; /* Light grey for even rows */
+    background-color: #f2f2f2; 
   }
   .match-info-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Light grey for even rows */
+    background-color: #f2f2f2; 
   }
   
-  /* Hover effect for rows */
   .match-info-table tr:hover {
-    background-color: #ddd; /* Darker grey on hover */
+    background-color: #ddd; 
   }
   

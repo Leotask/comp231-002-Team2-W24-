@@ -54,7 +54,6 @@ export default function Fixtures() {
     </div>
   );
 
-  // Team component for each team in a match
   const Team = ({ name, score, side }) => (
     <div className={`r18-team-${side}`} data-score={score}>
       <span className="r18-name">{name}</span>

@@ -341,13 +341,12 @@
   }
   
   .favorite-btn:before {
-    /* content: '♡'; */
     content: '❤️';
-    font-size: 24px; /* Adjust size as needed */
-    color: red; /* Adjust color as needed */
+    font-size: 24px; 
+    color: red; 
   }
   
   .favorite-btn.is-favorite:before {
     content: '❤️';
-    color: red; /* Adjust color as needed */
+    color: red; 
   }
