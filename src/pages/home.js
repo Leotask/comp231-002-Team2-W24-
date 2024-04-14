@@ -6,13 +6,13 @@ import './home.css';
 import { Link } from 'react-router-dom';
 
 const slidesData = [
-  { id: 1, src: img1, caption: 'Caption 1o' },
+  { id: 1, src: img1, caption: 'Caption 1' },
   { id: 2, src: img2, caption: 'Caption Two' },
   { id: 3, src: img3, caption: 'Caption Three' },
 
 ];
 
-const Slideshow = ({ slidesData }) => {
+export const Slideshow = ({ slidesData }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToSlide = (n) => {
